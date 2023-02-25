@@ -1,0 +1,89 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<style>
+    .combobox
+    {
+        width: 150px
+    }
+</style>
+<style>
+    .MainText{
+        background: orange;
+        text-align: center
+    }
+</style>
+<style>
+    .Text{
+        text-align:center
+    }
+</style>
+<table>
+    <tr>
+        <th colspan="4" class="MainText">
+            Информация для пропуска
+        </th>
+    </tr>
+    <tr>
+        <td colspan="4" class="Text">Срок действия заявки</td>
+    </tr>
+    <tr>
+        
+        <td>c</td>
+        <td><input type="date" class="combobox"></td>
+
+        <td>по</td>
+        <td><input type="date" class="combobox"></td>
+    </tr>
+    <tr>
+        <td colspan="4" class="Text">
+            Цель посещения
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4" class="Text">
+            <select class="combobox" ></select>
+        </td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <th colspan="4" class="MainText">
+            Информация o посетителе
+        </th>
+       </tr>
+    <tr>
+        <td>Фамилия :</td>
+        <td><input type="text"/></td>
+        <td>Организация :</td>
+        <td><input type="text" /></td>
+    </tr>
+    <tr>
+        <td>Имя :</td>
+        <td><input type="text" /></td>
+        <td>Примечание :</td>
+        <td><input type="text" /></td>
+    </tr>
+    <tr>
+        <td>Отчество :</td>
+        <td><input type="text" /></td>
+        <td>Дата рождения :</td>
+        <td><input type="date" /></td>
+    </tr>
+    <tr>
+        <td>E-mail :</td>
+        <td><input type="text" /></td>
+        <td>Номер :</td>
+        <td><input type="text" /></td>
+        <td rowspan="4"><input type="image" /></td>
+    </tr>
+    <tr>
+        <td>Фамилия :</td>
+        <td><input type="text" /></td>
+        <td>Организация :</td>
+        <td><input type="text" /></td>
+        <td colspan="2"><input type="button" value="Загрузить фото"/></td>
+    </tr>
+</table>
