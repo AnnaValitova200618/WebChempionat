@@ -6,7 +6,7 @@
 <style>
     .combobox
     {
-        width: 150px
+        width: 200px
     }
 </style>
 <style>
@@ -20,14 +20,22 @@
         text-align:center
     }
 </style>
-<table>
+<table align="center" >
     <tr>
         <th colspan="4" class="MainText">
             Информация для пропуска
         </th>
+        <td width="100"></td>
+        <th
+            width="200" class="MainText">
+            Принимающая сторона
+        </th>
+        
     </tr>
     <tr>
         <td colspan="4" class="Text">Срок действия заявки</td>
+        <td width="100"></td>
+        <td  class="Text">Подразделение</td>
     </tr>
     <tr>
         
@@ -36,19 +44,27 @@
 
         <td>по</td>
         <td><input type="date" class="combobox"></td>
+        <td width="100"></td>
+        <td><select class="combobox"></select></td>
     </tr>
     <tr>
         <td colspan="4" class="Text">
             Цель посещения
         </td>
+        <td width="100"></td>
+        <td>ФИО</td>
     </tr>
     <tr>
         <td colspan="4" class="Text">
             <select class="combobox" ></select>
         </td>
+        <td width="100"></td>
+        <td  class="Text">
+            <select class="combobox"></select>
+        </td>
     </tr>
 </table>
-<table>
+<table align="center">
     <tr>
         <th colspan="4" class="MainText">
             Информация o посетителе
@@ -73,17 +89,38 @@
         <td><input type="date" /></td>
     </tr>
     <tr>
-        <td>E-mail :</td>
+        <td>Телефон :</td>
         <td><input type="text" /></td>
         <td>Номер :</td>
         <td><input type="text" /></td>
         <td rowspan="4"><input type="image" /></td>
     </tr>
     <tr>
-        <td>Фамилия :</td>
+        <td>E-mail :</td>
         <td><input type="text" /></td>
         <td>Организация :</td>
         <td><input type="text" /></td>
         <td ><input type="button" value="Загрузить фото"/></td>
+    </tr>
+</table>
+<table align="center">
+    <tr>
+        <th class="MainText">
+            Прикрепляемые документы
+        </th>
+        
+    </tr>
+    <tr>
+        <td >
+            <input type="file"  />
+            
+        </td>
+        <td width="240"></td>
+        <td>
+            <input type="button" value="Очистить форуму" />
+        </td>
+        <td>
+            <input type="button" value="Оформить заявку" />
+        </td>
     </tr>
 </table>
